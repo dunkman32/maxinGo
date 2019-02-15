@@ -12,7 +12,7 @@
     padding: 40px 30px;
     background: linear-gradient(to left bottom, rgba(128,0,128, 0.8), rgba(128,0,18, 0.8));
     border-radius: 5px;
-    width:80%;
+    width:50%;
     margin: 5% auto;
     overflow: hidden;
   }
@@ -30,6 +30,7 @@
   body {
     margin: auto;
     background-image: linear-gradient(to right bottom, rgba(128,0,78, 0.5), rgba(128,0,128, 0.5)), url("https://cdn.hipwallpaper.com/i/62/26/uXqpD2.jpg");
+    background-size: :cover;
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -47,7 +48,7 @@
   }
   .titleDiv h1 {
     font-size: 18px;
-    background: #561744 none repeat scroll 0% 0%;
+    background: #561744;
     color: rgb(255, 255, 255);
     padding: 22px 25px;
     border-radius: 5px 5px 0px 0px;
@@ -59,7 +60,7 @@
   input {
     border-radius: 0px 5px 5px 0px;
     border: none;
-    width: 90%;
+    width: 89.5%;
     height: 40px;
     float: left;
   }
@@ -96,6 +97,27 @@
       color: #ccc;
   }
 
+  @media(max-width: 800px) {
+    .mainDiv {
+      width: 60%;
+    }
+  }
+  @media(max-width: 600px) {
+    .mainDiv {
+      width: 70%;
+    }
+  }
+  @media(max-width: 400px) {
+    .mainDiv {
+      width: 80%;
+    }
+  }
+
+  @media(max-width: 200px) {
+    .mainDiv {
+      width: 90% !important;
+    }
+  }
   </style>
   <body>
   <form  class="mainDiv">
